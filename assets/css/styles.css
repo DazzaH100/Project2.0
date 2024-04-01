@@ -1,40 +1,32 @@
-/* --------- Global style */
-
-
-/* --------- Heading */
-
-.heading {
-    text-align: center;
-    font-size: 2.5rem;
-}
-
 body, html {
-    background-color: white;
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
+    height: 100vh; /* Full height of the viewport */
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
     text-align: center;
+    /* Vibrant gradient background from a warm orange to a vivid purple */
+    background: linear-gradient(45deg, #ff9a8b, #ff6a88, #ff99ac, #fbc2eb, #a18cd1); 
+    background-size: 200% 200%; /* Larger background size for a smoother gradient transition */
+    animation: GradientAnimation 15s ease infinite; /* Animated gradient effect */
+    color: #ffffff; /* White text color for better contrast against the vibrant background */
 }
 
-.game-area {
-    background-color: #E6ECF0;
-    box-sizing: border-box;
-    width: 85%;
-    height: 65vh;
-    max-height: 450px;
-    max-width: 830px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 1%;
+@keyframes GradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
 #game {
     width: 80%;
     max-width: 600px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow around the game container */
+    background: rgba(255, 255, 255, 0.8); /* Slightly transparent white for the game container */
+    border-radius: 10px; /* Rounded corners for the game container */
 }
 
 #choices button {
@@ -42,8 +34,21 @@ body, html {
     margin: 5px;
     width: 18%;
     cursor: pointer;
+    border: none;
+    border-radius: 5px; /* Rounded corners for buttons */
+    font-weight: bold;
+    color: #ffffff; /* White text color */
+    background: rgba(0, 123, 255, 0.8); /* Semi-transparent bootstrap primary blue for buttons */
+    transition: background-color 0.3s; /* Smooth transition for button background color */
+}
+
+#choices button:hover {
+    background-color: rgba(0, 123, 255, 1); /* Darker blue on hover */
 }
 
 #result {
     margin-top: 20px;
+    background: rgba(255, 255, 255, 0.9); /* Slightly more opaque white for the result container */
+    padding: 10px;
+    border-radius: 5px; /* Rounded corners for the result container */
 }
