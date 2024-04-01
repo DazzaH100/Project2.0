@@ -108,3 +108,40 @@ Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` f
 ---
 
 Happy coding!
+
+
+Rules of the Game 
+
+Each player (you and the computer, in this case) chooses one of the five options: Rock, Paper, Scissors, Lizard, or Spock. The winner is determined by the rules below, which explain what beats what: 
+
+Rock crushes Scissors and crushes Lizard. 
+
+Scissors cuts Paper and decapitates Lizard. 
+
+Paper covers Rock and disproves Spock. 
+
+Lizard poisons Spock and eats Paper. 
+
+Spock smashes Scissors and vaporizes Rock. 
+
+The game aims to select a choice that defeats the opponent's choice based on these rules. 
+
+How to Play 
+
+Start the Game: When you load the game in your browser, you'll see buttons for Rock, Paper, Scissors, Lizard, and Spock. 
+
+Make Your Choice: Click on one of the buttons to make your choice. 
+
+Computer's Choice: After you make your choice, the computer randomly selects its choice from the five options. 
+
+Determine the Winner: The game then compares the choices based on the rules mentioned above to determine the winner of that round. 
+
+Score and Attempts: The game updates the scores and attempts left. You start with a limited number of attempts, and each choice you make uses one attempt. 
+
+Game Over: The game ends when you run out of attempts. The final score will indicate how many rounds you won against the computer. 
+
+Strategy 
+
+While the game is based on chance, playing multiple rounds can help you notice patterns in the computer's choices (if any are programmed) or adjust your choices to try and outguess your opponent, though in a truly random selection, strategy comes down to chance. 
+
+In a more complex version of the game, pattern recognition could be implemented to make the computer's choices more challenging by adapting to the player's selection habits, increasing the game's difficulty as you play more rounds. 
