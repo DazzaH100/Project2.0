@@ -1,31 +1,26 @@
-body {
-    font-family:  Arial, sans-serif;
+body, html {
     margin: 0;
     padding: 0;
-}
-
-header, footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     text-align: center;
 }
 
-main {
-    padding: 20px;
+#game {
+    width: 80%;
+    max-width: 600px;
 }
 
-h1, h2 {
-    margin-top: 0;
+#choices button {
+    padding: 10px;
+    margin: 5px;
+    width: 18%;
+    cursor: pointer;
 }
 
-#chartContainer {
-
-width: 100%;
-max-width: 600px;
-margin: auto;
-}
-
-#factText {
-    font-style: italic;
+#result {
+    margin-top: 20px;
 }
